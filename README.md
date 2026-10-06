@@ -173,23 +173,6 @@ Global parameters can be configured in [`src/config.py`](file:///c:/Users/soura/
 
 ---
 
-## ❓ Troubleshooting
-
-> [!TIP]
-> **Issue: Backend cannot connect to Ollama**
-> - Verify that `ollama serve` is active by running `curl http://localhost:11434/api/tags` in your terminal.
-> - If running on a non-standard port or remote host, set the `OLLAMA_API_URL` environment variable.
-
-> [!NOTE]
-> **Issue: MP3 output is unavailable**
-> - PyDub requires `ffmpeg` to encode MP3 files. Ensure FFmpeg is installed and added to your system's `PATH` environment variable. If unavailable, audio generation will safely default to `.wav` format.
-
-> [!IMPORTANT]
-> **Issue: Kokoro ONNX download failed on first run**
-> - On initial TTS execution, Kokoro ONNX assets (`kokoro-v1.0.int8.onnx` and `voices-v1.0.bin`) are retrieved from GitHub releases. Ensure an active internet connection during the first audio synthesis.
-
----
-
 ## 📜 License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for full details.
